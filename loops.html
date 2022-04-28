@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <script>
+      const users = ['johnny', 'bubu', 'bebe']
+      users[100] = 'Dog'
+
+
+      console.log('---------- For ----------');
+
+      for (let i = 0; i < users.length; i += 1) {
+        console.log(users[i])
+      }
+
+      console.log('---------- while ----------');
+
+      let i = 0
+      while (i < users.length) {
+        console.log(users[i])
+        i += 1
+      }
+
+      console.log('---------- For in ----------');
+
+      for (const i in users) {
+        console.log(users[i]);
+      }
+
+      console.log('---------- For of ----------');
+      for (const i of users) {
+        console.log(i)
+      }
+
+      // do {
+        
+      // } while (condition)
+    </script>
+  </body>
+
+</html>

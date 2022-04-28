@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <script>
+      console.log(calculateNetPrice(1000))
+
+      function calculateNetPrice(price) {
+        return price * 1.27
+      }
+
+      const calculateNetPriceWithArrowFunction = (price) => price * 1.27
+
+      let name = 'Gáll Gergely'
+
+      function setName(value) {
+        name = value
+      }
+
+      console.log(setName('Johnny'))
+      console.log(name)
+
+
+      const functionExpression = function (message) {
+        console.log('I sad ', message);
+      }
+
+      functionExpression('Ollé')
+
+      const fruits = ['apple', 'birne', 'tomato', 'peach']
+
+      const orderStringsDesc = (a, b) => b.localeCompare(a)
+      fruits.sort(orderStringsDesc)
+      console.log(fruits);
+
+      const prices = [1, 10, 2, 20, 11, 4]
+      const orderNumbersDesc = (a, b) => b - a
+      prices.sort(orderNumbersDesc)
+      console.log(prices);
+
+      function createCounter() {
+        let counter = 0
+        return function () {
+          counter += 1
+          return counter
+        }
+      }
+
+      const numericCounter = createCounter()
+      numericCounter()
+      numericCounter()
+      numericCounter()
+      numericCounter()
+      console.log(numericCounter());
+
+      console.log(createCounter()());
+    </script>
+  </body>
+
+</html>

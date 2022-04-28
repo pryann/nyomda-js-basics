@@ -1,0 +1,7 @@
+.product-price::before {
+  content: " - "
+}
+
+.product-price::after {
+  content: " HUF"
+}
